@@ -24,69 +24,73 @@
         justify-content: space-between;
 
         .logo{
-            font-size: 2rem;
             display: flex;
             align-items: center;
-            justify-content: center;
+            // justify-content: center;
             gap: 10px;
-            color: black;
-            
+           
+            color: #1D70B8;
             img{
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
+                width: 70px;
+                // height: 50px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            small{
+                font-size: 10px;
+                
             }
         }
 
-        .search-form{
-            width: 50rem;
-            height: 5rem;
-            border: 1px solid $grey;
-            overflow: hidden;
-            background:#fff;
-            display:flex;
+        .cta-container{
+            display: flex;
+            gap: 20px;
             align-items: center;
-            border-radius: .5rem;
-            
-            input{
-                font-size: 1.6rem;
-                padding:0 1.2rem;
-                height:100%;
-                width:100%;
-                text-transform: capitalize;
-                border-radius: 30px;
-            }
-            label{
-                font-size: 2.5rem;
-                padding-right: 1.5rem;
-                color: #3D3B3B;
+            button{
+                outline: none;
+                border: none;
+                // background: none;
+                width: 130px;
+                border-radius: 5px;
+                padding: 15px;
+                color: white;
+                font-weight: 400;
                 cursor: pointer;
+                font-weight: 600;
+                text-transform: capitalize;
                 &:hover{
-                   color: $primaryColor;
+                    transition: 0.3s ease;
+                    opacity: 90%;
                 }
             }
-        }
-
-        .icons{
-            // background-color: #000;
-            display: flex;
+            .login{
+                background-color: #F08228;
+            }
+            .register{
+                border: 2px solid #161616;
+                color: black;
+                background-color: white;
+            }
             div{
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 margin-left: 1.5rem;
-                color:var(--black);
+                color: #1D70B8;
                 cursor: pointer; 
     
                 &:hover{
-                    color: $primaryColor;
+                    color: #053259;
                 }
             }
-        } 
+        }
     }
 
     //second header
     .header-2{
         // margin-top: 5px;
-        background-color: $primaryColor;
+        background-color: #1D70B8;
         .navbar{
             text-align: center;
             
@@ -96,7 +100,7 @@
                 padding: 1.5rem;
                 font-size: 1.7rem;
                 &:hover{
-                    background-color: darken($color: $primaryColor, $amount: 10);
+                    background-color: #053259;
                 }
             }
         }
@@ -108,17 +112,7 @@
     }
 }
 
-#search-btn{
-    display: none;
-
-    // @media screen and (max-width: 768px) {
-    //     display: inline-block;
-    // }
-}
-
-
 // login form container
-
 .login-form-container{
     display: flex;
     align-items: center;
@@ -243,113 +237,40 @@
 }
 //home section
 .home{
-    background: url(../images/bg.png) no-repeat;
+    background: url(../images/exportBg.png) no-repeat;
     background-size: cover;
     object-fit: contain;
     background-position: center;
-
-    .row{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-
-        .content{
-            flex: 1 1 30rem;
-            
-            h3{
-                color:#000;
-                font-size: 3.5rem;
-            }
-            p{
-                color: #373737;
-                font-size: 1.4rem;
-                font-weight: 700;
-                line-height: 2;
-                padding: 1rem 0;
-            }
-        }
-
-        .books-slider{
-            flex:1 1 30rem;
-            text-align: center;
-            margin-top: 2rem;
-
-            a{
-                img{
-                    height: 35.5rem;
-                }
-            }
-            .stand{
-                width:100%;
-                margin-top: -2rem;
-            }
-        }
-    }
-}
-
-
-// books secrtion
-.books{
-    width: 100%;
-    padding: 1.5rem 9%;
-
-    h1{
+    height: 77.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+        width: 55%;
         text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-    }
-
-    .row{
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        margin-top: 2rem;
-
-        .book{
-            flex: 1 1 30rem;
-            background: #fff;
-            padding: 1.5rem;
-            border-radius: .5rem;
-            box-shadow: $shadow;
-            text-align: center;
-            position: relative;
-
-            .book-img{
-                img{
-                    height: 25rem;
-                }
-            }
-
-            .book-info{
-                h3{
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    color: $lightBlack;
-                    padding: 1rem 0;
-                }
-                p{
-                    font-size: 1.4rem;
-                    color: $lightBlack;
-                    padding: 1rem 0;
-                }
-                .btn{
-                    background: $primaryColor;
-                    color:#fff;
-                    font-size: 1.6rem;
-                    padding:1rem 1.2rem;
-                    width: 100%;
-                    text-align: center;
-                    border-radius: .5rem;
-                    border: none;
-                    margin:1.5rem 0;
-                    cursor: pointer;
-                    &:hover{
-                        background: darken($color: $primaryColor, $amount: 10);
-                    }
-                }
-            }
+        gap: 40px;
+        flex-direction: column;
+        h1{
+            color:#fff;
+            font-size: 4.563rem;
+        }
+        button{
+            outline: none;
+            border: none;
+            // background: none;
+            width: 130px;
+            border-radius: 5px;
+            padding: 15px;
+            color: white;
+            font-weight: 400;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: capitalize;
+            background-color: #0A5290;
+            animation: movebtn 3s ease-in-out infinite;
         }
     }
+
 }

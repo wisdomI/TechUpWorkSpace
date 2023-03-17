@@ -123,59 +123,61 @@ section {
   justify-content: space-between;
 }
 .header .header-1 .logo {
-  font-size: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  color: black;
+  color: #1D70B8;
 }
 .header .header-1 .logo img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 70px;
 }
-.header .header-1 .search-form {
-  width: 50rem;
-  height: 5rem;
-  border: 1px solid #BBBBBB;
-  overflow: hidden;
-  background: #fff;
+.header .header-1 .logo p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.header .header-1 .logo small {
+  font-size: 10px;
+}
+.header .header-1 .cta-container {
   display: flex;
+  gap: 20px;
   align-items: center;
-  border-radius: 0.5rem;
 }
-.header .header-1 .search-form input {
-  font-size: 1.6rem;
-  padding: 0 1.2rem;
-  height: 100%;
-  width: 100%;
+.header .header-1 .cta-container button {
+  outline: none;
+  border: none;
+  width: 130px;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  font-weight: 600;
   text-transform: capitalize;
-  border-radius: 30px;
 }
-.header .header-1 .search-form label {
-  font-size: 2.5rem;
-  padding-right: 1.5rem;
-  color: #3D3B3B;
-  cursor: pointer;
+.header .header-1 .cta-container button:hover {
+  transition: 0.3s ease;
+  opacity: 90%;
 }
-.header .header-1 .search-form label:hover {
-  color: #000080;
+.header .header-1 .cta-container .login {
+  background-color: #F08228;
 }
-.header .header-1 .icons {
-  display: flex;
+.header .header-1 .cta-container .register {
+  border: 2px solid #161616;
+  color: black;
+  background-color: white;
 }
-.header .header-1 .icons div {
-  font-size: 2.5rem;
+.header .header-1 .cta-container div {
+  font-size: 3.5rem;
   margin-left: 1.5rem;
-  color: var(--black);
+  color: #1D70B8;
   cursor: pointer;
 }
-.header .header-1 .icons div:hover {
-  color: #000080;
+.header .header-1 .cta-container div:hover {
+  color: #053259;
 }
 .header .header-2 {
-  background-color: #000080;
+  background-color: #1D70B8;
 }
 .header .header-2 .navbar {
   text-align: center;
@@ -187,7 +189,7 @@ section {
   font-size: 1.7rem;
 }
 .header .header-2 .navbar a:hover {
-  background-color: #00004d;
+  background-color: #053259;
 }
 .header .header-2.active {
   position: fixed;
@@ -195,10 +197,6 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-}
-
-#search-btn {
-  display: none;
 }
 
 .login-form-container {
@@ -324,95 +322,38 @@ section {
 }
 
 .home {
-  background: url(../images/bg.png) no-repeat;
+  background: url(../images/exportBg.png) no-repeat;
   background-size: cover;
   object-fit: contain;
   background-position: center;
+  height: 77.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home .row {
+.home .content {
+  width: 55%;
+  text-align: center;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 40px;
+  flex-direction: column;
 }
-.home .row .content {
-  flex: 1 1 30rem;
-}
-.home .row .content h3 {
-  color: #000;
-  font-size: 3.5rem;
-}
-.home .row .content p {
-  color: #373737;
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 2;
-  padding: 1rem 0;
-}
-.home .row .books-slider {
-  flex: 1 1 30rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-.home .row .books-slider a img {
-  height: 35.5rem;
-}
-.home .row .books-slider .stand {
-  width: 100%;
-  margin-top: -2rem;
-}
-
-.books {
-  width: 100%;
-  padding: 1.5rem 9%;
-}
-.books h1 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-}
-.books .row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-.books .row .book {
-  flex: 1 1 30rem;
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-  position: relative;
-}
-.books .row .book .book-img img {
-  height: 25rem;
-}
-.books .row .book .book-info h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #444;
-  padding: 1rem 0;
-}
-.books .row .book .book-info p {
-  font-size: 1.4rem;
-  color: #444;
-  padding: 1rem 0;
-}
-.books .row .book .book-info .btn {
-  background: #000080;
+.home .content h1 {
   color: #fff;
-  font-size: 1.6rem;
-  padding: 1rem 1.2rem;
-  width: 100%;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: none;
-  margin: 1.5rem 0;
-  cursor: pointer;
+  font-size: 4.563rem;
 }
-.books .row .book .book-info .btn:hover {
-  background: #00004d;
+.home .content button {
+  outline: none;
+  border: none;
+  width: 130px;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #0A5290;
+  animation: movebtn 3s ease-in-out infinite;
 }

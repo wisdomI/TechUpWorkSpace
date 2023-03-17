@@ -23,8 +23,19 @@ window.onload = () =>{
   
 }
   
-
 function fadeOut(){
     setTimeout(loader, 4000);
 }
-  
+
+// ==== Animate on Scroll Initialize  ==== //
+AOS.init();
+
+
+// ==== GSAP Animations ==== //
+// ==== text  ==== //
+gsap.from(".test", {
+  opacity: 0,
+  y: -10,
+  delay: 1,
+  duration: 0.5,
+});
