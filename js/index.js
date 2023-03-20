@@ -10,7 +10,6 @@ document.querySelector('#close-login-btn').onclick = () =>{
 }
 
 
-
 window.onload = () =>{
 
   if(window.scrollY > 80){

@@ -1,0 +1,669 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header-text-container {
+    align-self: center;
+}
+
+.about-us-subsection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-subsection-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    justify-content: center;
+}
+/* ABOUT US IMAGE */
+.about-img {
+    height: fit-content;
+    width: fit-content;
+}
+
+
+/* READ MORE BUTTON AND SHOW LESS BUTTON */
+
+.read-more, .show-less {
+    border: none;
+    color: #F08228;
+    background-color: transparent;
+}
+
+.more-txt, .hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* OUR MISSION */
+
+.text-2 b {
+    color: #1d70b8;
+}
+
+/* WHAT WE DO SECTION */
+.what-we-do, .we-work-main {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 50px;
+
+    background-color: rgba(29, 112, 184, 25%);
+
+    padding: 30px 0;
+}
+
+.we-work-main {
+    background-color: transparent;
+}
+
+
+.we-bring, .we-work {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reg-btn, .donate-btn {
+    border: none;
+    color: white;
+    background-color: #F08228;
+
+    height: 30px;
+    width: 80px;
+
+    border-radius: 2px;
+
+}
+
+/* OFFERINGS */
+.offering {
+    display: flex;
+    gap: 10px;
+}
+
+.offerings {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    padding-top: 25px;
+}
+
+.offering img {
+    height: 50px;
+    width: 50px;
+
+    align-self: center;
+}
+
+/* WE WORK SECTION */
+
+.we-work-main-img img {
+    height: 450px;
+    width: 450px;
+}
+
+
+/* MEET SPEAKERS SECTION */
+.meet-speakers {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 30px;
+    padding: 30px 0;
+
+    background-color: rgba(29, 112, 184, 25%);   
+}
+
+.card-nd-link {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.speaker-card {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+
+    justify-content: center;
+}
+
+.card-nd-link a {
+    align-self: center;
+}
+
+.speaker-card img {
+    height: 300px;
+    width: 250px;
+}
+
+/* CONTACT US */
+.contact-us {
+    display: flex;
+    flex-direction: column;
+
+
+    justify-items: center;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.contact-us h3 {
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.image-n-form {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-image img {
+    height: 300px;
+    width: 500px;
+    align-self: center;
+}
+
+.contact-image {
+    height: 450px;
+    box-shadow: 0 0 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+    height: 450px;
+    width: 350px;
+
+    box-shadow: 0 0 10px;
+
+    /* padding-bottom: 20px; */
+}
+
+.form-area-hidden {
+    display: none;
+}
+
+.form-area form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.form-area form input {
+    background-color: #F5F5F5;
+    border: none;
+
+    width: 300px;
+    height: 40px; 
+    padding: 10px;
+}
+
+.form-area form button {
+    color: white; 
+    border: none; 
+    background-color: #f08228; 
+    height: 30px; 
+    width: 90px;
+}
+
+/* CARROUSEL */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: 60vh;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+.carousel-text {
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.item1 {
+    background-image: url(./images/donate\ now\ 1.png);
+    background-size: cover contain;
+    background-repeat: no-repeat;
+}
+
+.item2 {
+    background-size: cover contain;
+    background-repeat: no-repeat;
+}
+
+.item3 {
+    background-size: cover contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 75rem;
+}
+
+.prev-btn, .next-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #ccc;
+}
+
+.prev-btn {
+    margin-right: 10px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: -30px;
+    background-color: #1D70B8;
+
+    color: white;
+
+    padding-bottom: 50px;
+}
+
+.logo-area img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    gap: 300px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px 50px;
+}
+
+.wrapper1, .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact img {
+    height: 30px;
+    width: 30px;
+}
+
+.footer-wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.follow {
+    display: flex;
+    gap: 25px;
+    padding-left: 50px;
+}
+
+.button-n-input {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button-n-input input  {
+    height: 30px;
+    width: 20rem;
+
+    padding: 0 10px;
+    border: none;
+}
+
+.email-btn {
+    height: 30px;
+    width: 4rem;
+
+    border: none;
+    background-color: #F08228;
+    color: white;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 767px) {
+
+    .about-img {
+        height: 500px;
+        width: 350px;
+
+        padding: 50px 0;
+    }
+
+    .about-us-subsection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offerings{
+        align-content: center;
+    }
+
+    .offering {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .offering img {
+        align-self: start;
+
+    }
+    
+    .we-work-main-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .offerings {
+        flex-direction: row;
+    }
+
+    .we-bring {
+        margin-top: 50px;
+        align-self: center;        
+    }
+
+    .reg-btn, .donate-btn {
+        align-self: center;
+    }
+
+    .what-we-do, .we-work-main {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .speaker-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image img, .contact-image {
+        width: 350px;
+
+    }
+
+    .form-area-hidden {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 50px;
+    
+        height: 400px;
+        width: 350px;
+
+        
+    
+        box-shadow: 0 0 10px;
+    }
+
+    .form-area-hidden form {
+        gap: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .form-area-hidden form input {
+        background-color: #F5F5F5;
+        border: none;
+    
+        width: 300px;
+        height: 40px; 
+        padding: 10px;
+    }
+
+    .form-area-hidden form button {
+        color: white; 
+        border: none; 
+        background-color: #f08228; 
+        height: 30px; 
+        width: 90px;
+    }
+
+    .contact-image {
+        align-self: center;
+    }
+
+    .form-area {
+        display: none;
+    }
+
+    .form-area form input {
+        width: 200px;
+    }
+
+    /* .carousel-item {
+        margin-right: 20px;
+    } */
+
+    .carousel-controls {
+        bottom: 150px;
+        left: 50%;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .footer {
+        gap: 20px;
+    }
+
+    .button-n-input input {
+        width: 100px;
+    }
+
+    .footer-wrapper2 {
+        flex-direction: column;
+    }
+
+    .follow {
+        gap: 5px;
+        align-content: center;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 586px) {
+    /* .carousel-item {
+        margin-right: 10px;
+    } */
+
+    .tesimonials {
+        margin-bottom: 50px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    
+    .offerings {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+
+        justify-content: center;
+    }
+
+    .offering  img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .carousel-controls {
+        gap: 60rem;
+    }
+
+}
+
+@media screen and (max-width: 1087px) {
+
+    .what-we-do, .we-work-main {
+        margin: 50px 0; 
+        padding: 30px 0;
+    }
+
+    .we-work-main-img img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .carousel-controls {
+        gap: 50rem;
+    }
+
+    .footer-wrapper2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 930px) {
+
+    .what-we-do, .we-work-main {
+        gap: 20px;
+
+        padding: 20px 0;
+    }
+
+    .we-work-main-img img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .carousel-controls {
+        gap: 40rem;
+    }
+
+    .image-n-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-area {
+        width: 500px;
+    }
+
+    .speaker-card {
+        gap: 10px;
+    }
+    .speaker-card img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .footer {
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer-wrapper {
+        gap: 150px;
+    }
+    
+}
+
