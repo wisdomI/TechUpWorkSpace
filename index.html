@@ -4,67 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech4Africa</title>
-    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-      <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+    <title>TechUp Africa</title>
 </head>
+
 <body>
-    <!-- header section starts  -->
-    <header class="header">
-
-        <div class="header-1">
-            <a href="#" class="logo"> 
-                <div class="text">
-                    <p>TechUp Africa</p>
-                    <small>Nuturing Africa Tech Talents</small>
+    <section id="head-section">
+        <section id="header-banner">
+            <div class="banner-sub">
+                <img src="./images/Group 97.png" alt="" class="logo">
+                <div class="cta-buttons">
+    
+                    <button class="log-in">
+                        Log In    
+                    </button>
+                
+                    <button class="register">
+                        Register    
+                    </button>
+                    
                 </div>
-            </a>
-
-            <div class="cta-container">
-                <button class="login">log in</button>
-                <button class="register">register</button>
-                <div id="login-btn" class="fas fa-user"></div>
+                <!-- <input type="search" placeholder="search here" class="search-bar"> -->
             </div>
+            <img src="./images/Group 54.png" alt="img" class="profile-picture">
+            <img src="./images/Group 54 mobile.png" alt="img" class="profile-picture-mobile">
+        </section>
 
+
+        <section id="navigation">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Members</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <div class="placeholder" style="height: 6.7rem">
+
+    </div>
+
+    <div class="mobile-cta">
+        <div class="mobile-cta-wrapper">
+            <button class="log-in-m">
+                Log In    
+            </button>
+        
+            <button class="register-m">
+                Register    
+            </button>
         </div>
+    </div>
 
-        <div class="header-2">
-            <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Members</a>
-                <a href="#">Contact</a>
-            </nav>
-        </div>
-
-    </header>
-    <!-- header section ends -->
-
-    <!-- bottom navbar for mobile  -->
-    <nav class="bottom-navbar">
-        <a href="#home" class="fas fa-home"></a>
-        <a href="#featured" class="fas fa-list"></a>
-        <a href="#arrivals" class="fas fa-tags"></a>
-        <a href="#reviews" class="fas fa-comments"></a>
-        <a href="#blogs" class="fas fa-blog"></a>
-    </nav>
-    <!--bottom navbar for mobile ends-->
-
-    <!-- login form  starts-->
     <div class="login-form-container">
 
-        <div id="close-login-btn" class="fas fa-times"></div>
+        <div id="close-login-btn" class="fas fa-times">
+        </div>
 
         <form action="">
-            <h3>sign in</h3>
+            <h3>Sign in</h3>
             <span>username</span>
-            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <input type="email" name="" class="box" placeholder="enter your email">
             <span>password</span>
-            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <input type="password" name="" class="box" placeholder="enter your password">
             <div class="checkbox">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me"> remember me</label>
@@ -75,16 +92,77 @@
         </form>
 
     </div>
-    <!--login for ends here-->
 
-    <!-- home section starts  -->
-    <section class="home" id="home">
-            <div class="content">
-                <h1 class="test">
-                    Empowering Africans  to Start, Thrive and Succeed in Tech Careers
-                </h1>
-                <button href="#">log in</button>
-            </div>
+    <div class="reg-form-container">
+        <div id="close-reg-btn" class="fas fa-times">
+        </div>
+
+        <form action="">
+            <h3>
+                Sign up
+            </h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password">
+            <button class="btn">
+                Sign up
+            </button>
+        </form>
+    </div>
+
+    <section id="hero-section">
+        <h1 class="hero-text">
+            Empowering Africans To <br>
+            Start, Thrive and Succeed In <br>
+            Tech Careers <br>
+        </h1>
+
+        <button class="hero-btn">
+            Log In
+        </button>
+    </section>
+
+    <section class="mobile-nav">
+        <div>
+            <ul>
+                <li class="mobile-home">
+                    <a href="#" class="mobile-link">
+                        <img src="./images/Home Page.png" alt="Home" class="mobile-nav-icon">
+                        <p>
+                            Home
+                        </p>
+                    </a>
+                </li>
+
+                <li class="mobile-about">
+                    <a href="#" class="mobile-link">
+                        <img src="./images/Info.png" alt="About" class="mobile-nav-icon">
+                        <p>
+                            About
+                        </p>
+                    </a>
+                </li>
+
+                <li class="mobile-blog">
+                    <a href="#" class="mobile-link">
+                        <img src="./images/Blogger.png" alt="Blog" class="mobile-nav-icon">
+                        <p>
+                            Blog
+                        </p>
+                    </a>
+                </li>
+
+                <li class="mobile-menu" >
+                    <a href="#" class="mobile-link">
+                        <img src="./images/Menu.png" alt="Menu" class="mobile-nav-icon">
+                        <p>
+                           Menu 
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <div class="about-us">
@@ -253,7 +331,7 @@
 
         <div class="image-n-form">
             <div class="contact-image">
-                <img src="./images/contact us la 1.png" alt="">
+                <img src="./images/Mask group111.png" alt="">
             </div>
 
             <div class="form-area">
@@ -282,11 +360,11 @@
         </div>
     </div>
 
-    <div class="testimonials">
-        <div class="carousel">
-
-            <div class="carousel-container">
-              <div class="carousel-item active item1">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide slide1">
                 <b>
                     JANE, KENYA
                 </b>
@@ -297,9 +375,8 @@
                     as a junior software developer and I love what I do. Thank you, TechUp Africa, for helping me <br> 
                     make my dreams a reality.”​
                 </p>
-              </div>
-
-              <div class="carousel-item item2">
+            </div>
+            <div class="swiper-slide slide2">
                 <b>
                     JIMMY, NIGERIA
                 </b>
@@ -308,9 +385,8 @@
                     enim quasi impedit fuga. Sapiente rerum doloremque nemo quis impedit incidunt culpa, deleniti <br> 
                     nostrum earum sed consequuntur?
                 </p>
-              </div>
-
-              <div class="carousel-item item3">
+            </div>
+            <div class="swiper-slide slide3">
                 <b>
                     SELINE, COTDEVOUR
                 </b>
@@ -319,18 +395,18 @@
                     enim quasi impedit fuga. Sapiente rerum doloremque nemo quis impedit incidunt culpa, deleniti <br> 
                     nostrum earum sed consequuntur?
                 </p>
-              </div>
             </div>
-            <div class="carousel-controls">
-                <button class="prev-btn"> 
-                    <img src="./images/Group 192.png" alt="prev-btn">    
-                </button>
-                <button class="next-btn">
-                    <img src="./images/Group 191.png" alt="next-btn"> 
-                </button>
-            </div>
-
+            ...
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
     </div>
 
     <footer class="footer">
@@ -412,9 +488,11 @@
         </div>
     </footer>
 
-    
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/body.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+    </script>
 </body>
 </html>
