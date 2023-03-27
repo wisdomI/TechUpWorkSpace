@@ -757,6 +757,13 @@
     border-radius: 5px;
 }
 
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+}
+
+
 .profile-picture-mobile {
     display: none;
 }
@@ -1207,6 +1214,9 @@
 
     .profile-picture-mobile {
         display: block;
+
+        width: 35px;
+        height: 35px;
     }
 
   .profile-picture {
