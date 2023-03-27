@@ -1,6 +1,4 @@
 
-
-
 // READ MORE AND SHOW LESS FUNCTIONALITIES STARTS HERE _________
 let moreText = document.querySelector(".more-txt")
 let showNone = document.querySelector(".show-less")
@@ -53,7 +51,7 @@ document.querySelector('#close-reg-btn').onclick = () => {
 let mobileLogin = document.querySelector('.mobile-cta')
 
 document.querySelector('.profile-picture-mobile').onclick = () => {
-  mobileLogin.classList.toggle('hidden')
+  mobileLogin.classList.toggle('hidden-view')
 }
 
 document.querySelector('.log-in-m').onclick = () => {
